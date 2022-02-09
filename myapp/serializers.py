@@ -12,4 +12,4 @@ class EventSerializer(serializers.ModelSerializer):
 class UserSerializer (serializers.ModelSerializer):
     class Meta:
         model = User
-        firlds = '__all__'
+        fields = "__all__"
