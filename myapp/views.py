@@ -6,10 +6,10 @@ from myapp.models import Event, User
 
 
 class Eventgenerics(generics.ListCreateAPIView):
-    queryset = Event
+    queryset = Event.objects.all()
     serializer_class = EventSerializer
 
 
 class Usergenerics (generics.ListCreateAPIView):
-    queryset = User
+    queryset = User.objects.all()
     serializer_class = UserSerializer
